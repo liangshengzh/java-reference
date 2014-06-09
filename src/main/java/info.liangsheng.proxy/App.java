@@ -27,8 +27,8 @@ public class App
 //            dos.close();
 
             CglibProxy cglibProxy = new CglibProxy();
-            UserDao userDao =(UserDao)cglibProxy.bind(new UserDao());
-            userDao.update();
+            //UserDao userDao =(UserDao)cglibProxy.bind(new UserDao());
+           // userDao.update();
 
         }
     }
