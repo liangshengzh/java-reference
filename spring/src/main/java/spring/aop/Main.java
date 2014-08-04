@@ -1,8 +1,7 @@
-package info.liangsheng.spring.aop;
+package spring.aop;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
 /**
  * Created by liangsheng on 6/3/14.

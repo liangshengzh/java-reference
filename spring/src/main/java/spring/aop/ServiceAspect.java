@@ -1,4 +1,4 @@
-package info.liangsheng.spring.aop;
+package spring.aop;
 
 import org.aspectj.lang.JoinPoint;
 
