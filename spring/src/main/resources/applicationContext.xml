@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
        <aop:config>
            <aop:aspect id="webServiceAspect" ref="serviceAspect">
-            <aop:pointcut id="webServicePointCut" expression="execution(* spring.aop.ActivationService.*(..))"/>
+            <aop:pointcut id="webServicePointCut" expression="execution(* info.liangshneg.spring.aop.ActivationService.*(..))"/>
             <aop:after-throwing method="doThrowing" pointcut-ref="webServicePointCut" throwing="ex"/>
            </aop:aspect>
        </aop:config>
-       <bean id="activationService" class="spring.aop.ActivationService"></bean>
-       <bean id="serviceAspect" class="spring.aop.ServiceAspect"></bean>
+       <bean id="activationService" class="info.liangshneg.spring.aop.ActivationService"></bean>
+       <bean id="serviceAspect" class="info.liangshneg.spring.aop.ServiceAspect"></bean>
 </beans>

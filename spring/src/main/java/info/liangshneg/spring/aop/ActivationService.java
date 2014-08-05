@@ -1,4 +1,4 @@
-package spring.aop;
+package info.liangshneg.spring.aop;
 
 /**
  * Created by liangsheng on 6/3/14.

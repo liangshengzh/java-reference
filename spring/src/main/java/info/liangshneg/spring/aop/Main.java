@@ -1,4 +1,4 @@
-package spring.aop;
+package info.liangshneg.spring.aop;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
