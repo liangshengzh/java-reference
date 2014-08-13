@@ -11,5 +11,6 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ActivationService activationService  = (ActivationService) context.getBean("activationService");
         activationService.getActivation();
+
     }
 }
