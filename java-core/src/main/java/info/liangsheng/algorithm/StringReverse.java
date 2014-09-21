@@ -1,4 +1,4 @@
-package info.liangsheng;
+package info.liangsheng.algorithm;
 
 /**
  * Created by liangsheng on 9/11/14.
