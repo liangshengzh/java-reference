@@ -10,6 +10,7 @@
         <module>java-core</module>
         <module>hibernate</module>
         <module>rxjava</module>
+        <module>spring-boot</module>
     </modules>
     <packaging>pom</packaging>
 

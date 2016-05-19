@@ -1,0 +1,5 @@
+Spring boot
+
+${application.version}
+${spring-boot.version}
+${spring-boot.formatted-version}
