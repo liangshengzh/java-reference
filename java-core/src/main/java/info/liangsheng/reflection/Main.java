@@ -1,5 +1,7 @@
 package info.liangsheng.reflection;
 
+import java.util.Stack;
+
 /**
  * Created by zhong on 3/24/16.
  */
@@ -16,5 +18,7 @@ public class Main {
         }catch (Exception e){
             e.printStackTrace();
         }
+
+        Stack
     }
 }
