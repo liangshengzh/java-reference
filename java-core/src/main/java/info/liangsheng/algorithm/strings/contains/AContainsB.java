@@ -1,5 +1,9 @@
 package info.liangsheng.algorithm.strings.contains;
 
+import info.liangsheng.algorithm.sort.QuickSort;
+
+import java.util.HashSet;
+
 /**
  * Created by zhonlian on 2016/8/12.
  * 给定两个分别由字母组成的字符串A和字符串B，字符串B的长度比字符串A短。请问，如何最快地判断字符串B中所有字母是否都在字符串A里？
@@ -32,6 +36,8 @@ public class AContainsB {
         String b = "AABE";
         System.out.println(contains(a, b));
         System.out.println(contains(a.toCharArray(), b.toCharArray()));
+        System.out.println(contains1(a.toCharArray(), b.toCharArray()));
+        System.out.println(contains2(a.toCharArray(), b.toCharArray()));
     }
 
     public static boolean contains(String a, String b){
@@ -66,5 +72,37 @@ public class AContainsB {
         }
         return true;
     }
+
+
+    public static boolean  contains1(char[] a, char[] b){
+        QuickSort.sort(a, 0, a.length-1);
+        QuickSort.sort(b, 0, b.length-1);
+
+        for(int i =0, j =0; i< b.length;  i++){
+            while( j<a.length && a[j]<b[i]){
+                j++;
+            }
+            if(j >= a.length || a[j]>b[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean contains2(char[] a, char[] b){
+        HashSet set = new HashSet();
+        for(int i  = 0; i< a.length; i++){
+            set.add(a[i]);
+        }
+
+        for(int j = 0; j< b.length; j++){
+            if(!set.contains(b[j])){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 }
 
